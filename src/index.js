@@ -4,6 +4,7 @@ import './index.css';
 import CrudApp from './Crud';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

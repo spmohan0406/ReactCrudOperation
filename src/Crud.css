@@ -34,7 +34,7 @@ body {
   max-width: 600px;
   margin: 13% auto;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: lavender;
   box-shadow: 0 0 8px rgba(4, -3, 118, 1.2);
   height: 300px; /* Set a fixed height for the container */
   overflow-y: auto; /* Add scrollbar for vertical overflow */
@@ -42,6 +42,7 @@ body {
 
 h1 {
   text-align: center;
+  color: #b46868;
 }
 
 .input-container {
@@ -73,37 +74,41 @@ h1 {
   background-color: #0056b3;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-li {
-  margin-bottom: 10px;
-}
-
-li input[type="text"] {
+th, td {
   padding: 8px;
-  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
-li button {
-  padding: 8px 36px;
-  background-color: #dc3545;
+th {
+  background-color: #007bff;
   color: #fff;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+td input[type="checkbox"] {
+  margin: 0;
+}
+.btn-delete{
+  border-radius: 5px;
   border: none;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 10px;
+  padding: 4px;
+  min-width: 13%;
+  background-color: #ff4c4c;
+  color: white;
+}
+.btn-delete:hover{
+  color: #000000;
 }
 
-li button i {
-  margin-right: 5px;
-}
-
-li button:hover {
-  background-color: #c82333;
-}
  
 
   /* popup style */
@@ -120,7 +125,7 @@ li button:hover {
   }
   
   .popup {
-    background-color: #fff;
+    background-color:rgb(255, 255, 255);
     padding: 40px;
     border-radius: 105px;
     box-shadow: 0 0 8px rgba(4, -3, 118, 1.2);/* Shadow effect */
@@ -146,4 +151,10 @@ li button:hover {
     background-color: #6c757d;
     color: #fff;
     border: none;
+  }
+  .popup button.confirm:hover{
+    color: #fbb504;
+  }
+  .popup button.cancel:hover{
+    color: #fbb504;
   }

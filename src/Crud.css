@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle of the scrollbar */
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust color as needed */
+  border-radius: 6px;
+}
+
+/* Style on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust color as needed */
+}
+
+/* Animation for scrollbar track */
+@keyframes slidein {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.1); /* Adjust color as needed */
+  }
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Adjust color as needed */
+  animation: slidein 0.5s ease forwards;
+}
+.container {
+  max-width: 600px;
+  margin: 13% auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgba(4, -3, 118, 1.2);
+  height: 300px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Add scrollbar for vertical overflow */
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.input-container button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.input-container button i {
+  margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+}
+
+li button {
+  padding: 8px 36px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px;
+}
+
+li button i {
+  margin-right: 5px;
+}
+
+li button:hover {
+  background-color: #c82333;
+}
+ 
+
+  /* popup style */
+  .popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 105px;
+    box-shadow: 0 0 8px rgba(4, -3, 118, 1.2);/* Shadow effect */
+  }
+  
+  .popup p {
+    margin-bottom: 15px;
+  }
+  
+  .popup button {
+    padding: 8px 47px;
+    margin-right: 34px;
+    cursor: pointer;
+  }
+  
+  .popup button.confirm {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+  }
+  
+  .popup button.cancel {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+  }

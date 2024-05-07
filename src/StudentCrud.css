@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: lavender;
+}
+.borderbox{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(4, -3, 118, 1.2);
+    width: 100%;
+}
+td button {
+    margin-right: 5px;
+    padding: 5px;
+  }

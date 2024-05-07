@@ -293,7 +293,7 @@ function StudentCrud() {
       )}
       <br />
       <table className="table table-striped table-bordered table-hover table-sm">
-        <thead className="table-primary">
+        <thead className="table-dark">
           <tr>
             <th scope="col">Student Id</th>
             <th scope="col">Student Name</th>
